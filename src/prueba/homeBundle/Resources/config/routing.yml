@@ -1,0 +1,27 @@
+home_homepage:
+    path:     /licencias/hello/{name}
+    defaults: { _controller: homeBundle:Default:index }
+
+home_test:
+    path:     /licencias/test
+    defaults: { _controller: homeBundle:test:index }
+
+home_producto:
+    path:     /licencias/producto
+    defaults: { _controller: homeBundle:test:producto }
+
+home_detalle:
+    path:     /licencias/producto/detalle/{id}
+    defaults: { _controller: homeBundle:test:detalle }
+
+home_create:
+    path:     /licencias/producto/add
+    defaults: { _controller: homeBundle:test:create }
+
+home_update:
+    path:     /licencias/producto/edit/{id}
+    defaults: { _controller: homeBundle:test:update }
+
+home_delete:
+    path:     /licencias/producto/delete/{id}
+    defaults: { _controller: homeBundle:test:delete }

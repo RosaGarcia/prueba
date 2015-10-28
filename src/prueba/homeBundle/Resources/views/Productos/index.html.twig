@@ -1,0 +1,13 @@
+<h1>Listado de productos</h1>
+
+<ul>
+{% for dato in datos %}
+
+<li>
+<a href="{{asset('licencias/producto/detalle')}}/{{ dato.id }}" title="{{dato.nombre}}">{{ dato.nombre }}</a>
+
+<a href ="{{asset('licencias/producto/delete')}}/{{ dato.id }}" title="Eliminar">Eliminar</a>
+</li>
+
+{% endfor %}
+</ul>

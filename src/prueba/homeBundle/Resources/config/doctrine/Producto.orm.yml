@@ -1,0 +1,24 @@
+prueba\homeBundle\Entity\Producto:
+    type: entity
+    table: null
+    repositoryClass: prueba\homeBundle\Entity\ProductoRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '50'
+        idModelo:
+            type: integer
+            column: id_modelo
+        idCaracteristicas:
+            type: text
+            column: id_caracteristicas
+        idFabricante:
+            type: integer
+            column: id_fabricante
+    lifecycleCallbacks: {  }
